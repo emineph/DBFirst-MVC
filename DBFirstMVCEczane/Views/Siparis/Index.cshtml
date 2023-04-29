@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DBFirstMVCEczane.Models.Siparis>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Sipariş Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Yeni Giriş", "Ekle")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SiparisAdet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GelisTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiparisTarihi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiparisAdet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GelisTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiparisTarihi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Ekle", new { id=item.SiparişID }) |
+
+            @Html.ActionLink("Delete", "Delete", new { id=item.SiparişID })
+        </td>
+    </tr>
+}
+
+</table>

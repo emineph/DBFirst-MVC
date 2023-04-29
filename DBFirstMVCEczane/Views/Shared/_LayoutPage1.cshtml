@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>PH Eczane</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    
+    
+    <!-- Favicons -->
+    <link href="~/sitetema/assets/img/favicon.png" rel="icon">
+    <link href=~/sitetema/"assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/sitetema/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/sitetema/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/sitetema/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/sitetema/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/sitetema/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/sitetema/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/sitetema/assets/css/style.css" rel="stylesheet" />
+    <!-- =======================================================
+    * Template Name: Groovin
+    * Updated: Mar 10 2023 with Bootstrap v5.2.3
+    * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+    @RenderBody()
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">PH Eczane</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Anasayfa</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Hizmetlerimiz</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Ekibimiz</a></li>
+                    <li><a class="nav-link scrollto" href="@Url.Action("Index","Kullanici")" >Kullanıcı Girişi</a></li>
+                    <li><a class="nav-link scrollto" href="@Url.Action("Index","Admin")">Admin Sayfası</a></li>
+
+
+                    <li><a class="nav-link scrollto" href="#contact">İletişim</a></li>
+                    <li><a class="getstarted scrollto" href="#about">Buradan Başlayınız</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image:"
+                     <img src="~/sitetema/assets/img/slide/images/slide-1-tn.png" /> >
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Sağlık</h2>
+                                <p class="animate__animated animate__fadeInUp">Gelecekte, özellikle yüksek teknoloji ile üretilen ürünlere yoğunlaşmayı hedefleyen Eczacıbaşı Topluluğu’nun sağlık alanındaki kuruluşları, Ar-Ge konusunda dünya lideri olan iş ortaklarının bilgi birikimi ve deneyimini kendi üretim, pazarlama ve satış süreçlerinde değerlendirerek, çağdaş ve kaliteli bir sağlık hizmeti anlayışı ortaya koyuyor. Eczacıbaşı, insan yaşamının tüm evrelerinde; korumadan erken teşhise ve yenilikçi tedavilere kadar sürekli büyüyen ürün ve hizmet portföyüyle Türkiye’de sağlık alanında bütünsel yaklaşımın öncüsü olmaya devam ediyor.</p>
+                                <div>
+                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Daha Fazlası</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background-image: url(~/sitetema/assets/img/slide/slide-2.png); ">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Yapı Ürünleri</h2>
+                                <p class="animate__animated animate__fadeInUp">Büyüme stratejisini çok markalı, çok üretim merkezli ve çok pazarlı bir yapıda geliştiren Eczacıbaşı Yapı Ürünleri'nin, dörtte biri yurtdışında olmak üzere yaklaşık 6.500 çalışanı ve 4 ülkede 12 üretim tesisi bulunuyor. Eczacıbaşı Yapı Ürünleri'nin Bozüyük’te yer alan ve çevre dostu teknolojilerin kullanıldığı üretim kampüsü; kapasite, teknoloji ve kalite bakımından seramik üreten tesisler arasında dünyada ilk sıralarda yer alıyor. Bozüyük (Bilecik), Gebze (İzmit) ve Tuzla (İstanbul) olmak üzere Türkiye’de 5; Almanya, Fransa ve Rusya’da ise toplam 7 tesiste üretim yapıyor. Banyoda kullanılan tüm ürünleri tasarlayıp üretebilen Eczacıbaşı Yapı Ürünleri'nin yıllık üretim kapasitesi; 5,6 milyon seramik sağlık gereci, 30 milyon m2 seramik kaplama malzemesi, 2 milyon armatür, 350 bin küvet ve duş teknesi, 400 bin modül banyo mobilyasından oluşuyor.</p>
+                                <div>
+                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Daha Fazlası</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background-image: url(~/sitetema/assets/img/slide/slide-3.png);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Diğer Ürün ve Hizmetler</h2>
+                                <p class="animate__animated animate__fadeInUp">Eczacıbaşı, temel olarak yapı ürünleri, sağlık, tüketim ürünleri alanında, ulusal ve uluslararası pazarlara yönelik olarak çalışan bir sanayi kuruluşları topluluğudur. Topluluk yapısında, bu temel sektörler dışında finans, bilgi teknolojileri, doğal kaynaklar ve gayrimenkul geliştirme ve işletme yönetimi alanında etkinlik gösteren kuruluşlar da yer alıyor.</p>
+                                <div>
+                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Daha Fazlası</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row no-gutters">
+                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3>Daha Önceki Çalışmalar</h3>
+                            
+                            
+                        </div><!-- End .content-->
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Counts Section ======= -->
+        <section id="counts" class="counts">
+            <div class="container">
+
+                <div class="row no-gutters">
+
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Mutlu Müşteriler</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Projeler</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-headset"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Destek Saatleri</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-people"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Çalışan Sayımız</strong></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Counts Section -->
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-1.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-2.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="~/sitetema/assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Clients Section -->
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Hizmetlerimiz</h2>
+                    <p>Kurucusunun, yaşamı boyunca savunduğu ve uyguladığı görüşler, Eczacıbaşı Topluluğu'nun toplum hizmetleri konusundaki temel ilke ve geleneğini oluşturur. Eczacıbaşı Topluluğu, kültür, sanat, eğitim, bilim ve spor alanlarında toplumsal yaşamın gelişmesine katkıda bulunmayı sorumlulukları arasında sayar. Eczacıbaşı Topluluğu, toplumsal hizmetlerini, doğrudan kurduğu ya da kuruluş ve yönetiminde etkin rol aldığı kurumlar aracılığıyla yürütür.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-briefcase"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-binoculars"></i></div>
+                        <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Niçin Bizi Tercih Etmelisiniz?</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <span>01</span>
+                            <h4>Lorem Ipsum</h4>
+                            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>02</span>
+                            <h4>Repellat Nihil</h4>
+                            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>03</span>
+                            <h4> Ad ad velit qui</h4>
+                            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+
+            </div>
+        </section><!-- End Portfolio Section -->
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Ekibimiz</h2>
+                    <p>"Çok heyecan verici bir süreç. Bir projenin doğumundan itibaren günlük hayata uyarlanmasına dek tüm aşamalarda verdiğiniz emeğin sonucunu görebiliyorsunuz." "Eczacıbaşı Topluluğu'nun birliktebiz projesinin sloganı "Kadın işi, erkek işi yok" beni inanılmaz derecede motive ediyor. Herkes her işi yapabilir; yeter ki çalışın, yeter ki isteyin, yeter ki motive olun."</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="member">
+                            <img src="~/sitetema/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Deniz Cam</h4>
+                                    <span>Chief Executive Officer</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+                        <div class="member">
+                            <img src="~/sitetema/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Lale Öz</h4>
+                                    <span>Product Manager</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+                        <div class="member">
+                            <img src="~/sitetema/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ali Can Seven</h4>
+                                    <span>CTO</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="~/sitetema/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Cansu Derin</h4>
+                                    <span>Accountant</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+
+
+            </div>
+        </section><!-- End Pricing Section -->
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Sıkça Sorulan Sorular</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section><!-- End Frequently Asked Questions Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>İletişim</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Adres Bilgileri</h3>
+                            <address>Cami Mah. Atatürk Cad. Mercan Sitesi,34567, İstanbul</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Telefon Numarası</h3>
+                            <p><a href="tel:+9058955455">+90 5589 55488 55</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">info@pheczane.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="İsminiz" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter giriniz.">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email Adresiniz" data-rule="email" data-msg="Lütfen geçerli bir email adresi giriniz.">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Mesaj" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mesajınız iletildi.Teşekkür ederiz!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Mesaj Gönder</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>PH Eczane</h3>
+                            <p>
+
+                                Cami Mah. Atatürk Cad. <br>
+                                Mercan Sitesi,34567, İstanbul<br><br>
+                                <strong>Telefon:</strong> +9058955455<br>
+                                <strong>Email:</strong> info@pheczane.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Yararlı Linkler</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Anasayfa</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hakkımızda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hizmetler</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hizmet Politikası</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Güvenlik Politikası</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Servislerimiz</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Tasarımı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Geliştime</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ürün Yöneticilerimiz</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Grafik Tasarımı</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Haberler</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>PHEczane</span></strong>. Tüm Hakları Saklıdır.
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+                Designed by <a href="https://bootstrapmade.com/">EminePH</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+
+    <script src="~/sitetema/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/sitetema/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/sitetema/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/sitetema/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/sitetema/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/sitetema/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/sitetema/assets/js/main.js"></script>
+
+</body>
+
+</html>

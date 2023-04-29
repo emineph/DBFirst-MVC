@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DBFirstMVCEczane.Models.Stok>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Stok Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Yeni Giriş", "Ekle")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StokAdet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxGereken)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinGereken)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StokAdet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxGereken)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinGereken)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Ekle", new { id=item.StokID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StokID })
+        </td>
+    </tr>
+}
+
+</table>

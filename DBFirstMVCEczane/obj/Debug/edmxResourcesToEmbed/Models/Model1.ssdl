@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EczaneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="İlac">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IlacAd" Type="varchar" MaxLength="50" />
+    <Property Name="IlacSirketi" Type="varchar" MaxLength="50" />
+    <Property Name="IlacTuru" Type="varchar" MaxLength="50" />
+    <Property Name="IlacKutuAdet" Type="int" />
+  </EntityType>
+  <EntityType Name="Kullanicilar1">
+    <Key>
+      <PropertyRef Name="KullaniciNo" />
+    </Key>
+    <Property Name="KullaniciNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="50" />
+    <Property Name="MatchSifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Siparis">
+    <Key>
+      <PropertyRef Name="SiparişID" />
+    </Key>
+    <Property Name="SiparişID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisAdet" Type="int" />
+    <Property Name="GelisTarihi" Type="varchar" MaxLength="50" />
+    <Property Name="SiparisTarihi" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Stok">
+    <Key>
+      <PropertyRef Name="StokID" />
+    </Key>
+    <Property Name="StokID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokAdet" Type="int" />
+    <Property Name="MaxGereken" Type="int" />
+    <Property Name="MinGereken" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="EczaneModelStoreContainer">
+    <EntitySet Name="İlac" EntityType="Self.İlac" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar1" EntityType="Self.Kullanicilar1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Siparis" EntityType="Self.Siparis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stok" EntityType="Self.Stok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

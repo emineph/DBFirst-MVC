@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DBFirstMVCEczane.Models.İlac>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>İlaç Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Ekle")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IlacAd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IlacSirketi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IlacTuru)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IlacKutuAdet)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IlacAd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IlacSirketi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IlacTuru)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IlacKutuAdet)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

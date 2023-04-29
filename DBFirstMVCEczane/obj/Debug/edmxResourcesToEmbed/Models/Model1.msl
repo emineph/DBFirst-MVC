@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EczaneModelStoreContainer" CdmEntityContainer="EczaneEntities2">
+    <EntitySetMapping Name="İlac">
+      <EntityTypeMapping TypeName="EczaneModel.İlac">
+        <MappingFragment StoreEntitySet="İlac">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IlacAd" ColumnName="IlacAd" />
+          <ScalarProperty Name="IlacSirketi" ColumnName="IlacSirketi" />
+          <ScalarProperty Name="IlacTuru" ColumnName="IlacTuru" />
+          <ScalarProperty Name="IlacKutuAdet" ColumnName="IlacKutuAdet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanicilar1">
+      <EntityTypeMapping TypeName="EczaneModel.Kullanicilar1">
+        <MappingFragment StoreEntitySet="Kullanicilar1">
+          <ScalarProperty Name="KullaniciNo" ColumnName="KullaniciNo" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="MatchSifre" ColumnName="MatchSifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparis">
+      <EntityTypeMapping TypeName="EczaneModel.Sipari">
+        <MappingFragment StoreEntitySet="Siparis">
+          <ScalarProperty Name="SiparişID" ColumnName="SiparişID" />
+          <ScalarProperty Name="SiparisAdet" ColumnName="SiparisAdet" />
+          <ScalarProperty Name="GelisTarihi" ColumnName="GelisTarihi" />
+          <ScalarProperty Name="SiparisTarihi" ColumnName="SiparisTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stoks">
+      <EntityTypeMapping TypeName="EczaneModel.Stok">
+        <MappingFragment StoreEntitySet="Stok">
+          <ScalarProperty Name="StokID" ColumnName="StokID" />
+          <ScalarProperty Name="StokAdet" ColumnName="StokAdet" />
+          <ScalarProperty Name="MaxGereken" ColumnName="MaxGereken" />
+          <ScalarProperty Name="MinGereken" ColumnName="MinGereken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="EczaneModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

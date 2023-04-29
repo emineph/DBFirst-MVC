@@ -1,0 +1,49 @@
+﻿@model DBFirstMVCEczane.Models.Stok
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Silmek istediğinizden emin misiniz?</h3>
+<div>
+    <h4>Stok</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StokAdet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokAdet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxGereken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxGereken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinGereken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinGereken)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Listeye Geri Dön", "Index")
+        </div>
+    }
+</div>
